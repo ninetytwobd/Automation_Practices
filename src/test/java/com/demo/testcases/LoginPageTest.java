@@ -36,7 +36,7 @@ public class LoginPageTest extends TestBase {
 		Assert.assertTrue(logo);
 		
 	}
-	@Test(priority=0)
+	@Test(priority=3)
 	public void logingTest(){
 		
 		
