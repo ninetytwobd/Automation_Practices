@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional Test Suite">
+
+	<listeners>
+		<listener class-name="com.demo.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="Functional Test Cases">
+		<classes>
+			
+			<class name="com.demo.testcases.HomePageTest"></class>
+			<class name="com.demo.testcases.ProductsNServicesPageTest"></class>
+			<class name="com.demo.testcases.LoginPageTest"></class>
+			
+		</classes>
+	</test>
+</suite>
