@@ -11,16 +11,17 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+  
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.test.skip>false</maven.test.skip>
   </properties>
   
-  <build>
+    <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -28,15 +29,15 @@
       </plugin>
       
       <plugin>
-	  <groupId>org.apache.maven.plugins</groupId>
-	  <artifactId>maven-surefire-plugin</artifactId>
-	  <version>2.21.0</version>
-	  <configuration>
-            <suiteXmlFiles>
-                <suiteXmlFile>/release1/srcmain/testng.xml</suiteXmlFile>
-            </suiteXmlFiles>
-         </configuration>
-		</plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M3</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>C:\Users\jahan\eclipse-workspace\automation.qa\src\main\resources\testing.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
       
     </plugins>
   </build>
@@ -75,28 +76,26 @@
     <version>2.53.0</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi</artifactId>
     <version>4.0.0</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+
 <dependency>
     <groupId>com.relevantcodes</groupId>
     <artifactId>extentreports</artifactId>
     <version>2.41.1</version>
 </dependency>
-<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
 <dependency>
-    <groupId>log4j</groupId>
-    <artifactId>log4j</artifactId>
-    <version>1.2.17</version>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.7.0</version>
 </dependency>
-
 
 
   </dependencies>
   
 </project>
-  
+    

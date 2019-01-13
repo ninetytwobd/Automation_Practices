@@ -11,9 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
-	
-	public static WebDriver driver;
-	public static Properties prop;
+	//Test
+	public static  WebDriver driver;
+	public  static Properties prop;
 	
 	public TestBase() {
 		try {
@@ -31,7 +31,7 @@ public class TestBase {
 
       public static void initialization1() {
     	  String browsername = prop.getProperty("browser");
-    	  //String browsername = prop.getProperty("browser");
+    	  
     	  
     	  if(browsername.equals("chrome")) {
     		  System.setProperty("webdriver.chrome.driver","\\C:\\Users\\jahan\\OneDrive\\Desktop\\Driver\\chromedriver.exe\\");

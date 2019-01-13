@@ -11,6 +11,7 @@ import com.demo.pages.HomePage;
 import com.demo.pages.LoginPage;
 import com.demo.pages.ProductsNServicesPage;
 import com.demo.util.TestUtil;
+import com.sun.media.jfxmedia.logging.Logger;
 
 public class ProductsNServicesPageTest extends TestBase {
 	LoginPage loginpage;
@@ -18,6 +19,7 @@ public class ProductsNServicesPageTest extends TestBase {
 	ProductsNServicesPage productsNServicesPage;
 	
 	String sheetName= "NewServiceInfo";
+	
 	public ProductsNServicesPageTest() {
 		super();
 	}
@@ -26,6 +28,7 @@ public class ProductsNServicesPageTest extends TestBase {
 	@BeforeMethod 
 	public void setUp() {
 		initialization1();
+		
 		loginpage = new LoginPage();
 		productsNServicesPage = new ProductsNServicesPage();
 		homepage = loginpage.login1(prop.getProperty("username"), prop.getProperty("password"));
@@ -47,6 +50,7 @@ public class ProductsNServicesPageTest extends TestBase {
 		//productsNServicesPage.newService("Tom", "$200","1001", "Thats a test product");
 		productsNServicesPage.newService(Name, SalesPrice, ItemNumber, Description);
 		homepage.ordersubmit();
+		
 		
 }
 	@AfterMethod

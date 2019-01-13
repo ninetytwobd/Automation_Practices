@@ -27,6 +27,7 @@ public class ProductsNServicesPage extends TestBase {
 	public void newService(String name, String saleprice, String iitemnumber, String description) {
 		TypeName.sendKeys(name);
 		salesprice.sendKeys(saleprice);
+		itemnumber.clear();
 		itemnumber.sendKeys(iitemnumber);
 		Description.sendKeys(description);
 }
